@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@23,400,0,0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/planeter.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="src/script.js" type="module"></script>
+    <title>Solsystemet | Solaris</title>
+</head>
+<body>
+   <header class="title">
+        <h1>Solsystemet</h1>
+        <h2>Solaris</h2>
+   </header>
+   
+   <main>
+        <section class="solarsystem">
+            <section class="solen"></section>
+            <section class="planet merkurius" data-planet="merkurius"></section>
+            <section class="planet venus" data-planet="venus"></section>
+            <section class="planet jorden" data-planet="jorden"></section>
+            <section class="planet mars" data-planet="mars"></section>
+            <section class="planet jupiter" data-planet="jupiter"></section>
+            <section class="planet saturnus" data-planet="saturnus"></section>
+            <section class="planet uranus" data-planet="uranus"></section>
+            <section class="planet neptunus" data-planet="neptunus"></section>
+        </section>
+
+        <section id="planet-modal" class="modal">
+            <section id="modal-stars"></section>
+            
+            <section class="modal-content">
+                <section id="modal-close"><i class='bx bx-x'></i></section>
+                <section id="modal-planet"></section>
+                <h2 id="planet-name"></h2>
+                <p id="planet-latin"></p>
+                <p id="planet-desc"></p>
+
+                <section class="modal-separator"></section>
+                
+                <section class="modal-info">
+                    <section class="first-modal-column">
+                        <p><strong>Omkrets</strong></p>
+                        <p id="planet-circumference"></p>
+                        <p><strong>Max temperatur</strong></p>
+                        <p id="planet-maxtemp"></p>
+                    </section>
+                    
+                    <section class="second-modal-column">
+                        <p><strong>Avstånd till solen</strong></p>
+                        <p id="planet-kmtosun"></p>
+                        <p><strong>Min temperatur</strong></p>
+                        <p id="planet-mintemp"></p>
+                    </section>
+                </section>
+                
+                <section class="modal-separator"></section>
+                
+                <p class="moons"><strong>Månar</strong></p>
+                <p id="planet-moons"></p>
+            </section>
+        </section>
+   </main>
+   
+</body>
+</html>

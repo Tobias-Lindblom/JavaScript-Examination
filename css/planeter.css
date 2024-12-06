@@ -1,0 +1,151 @@
+.solarsystem {
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+}
+
+.solen {
+    position: absolute;
+    top: -40px;
+    left: -425px;
+    width: 500px;
+    height: 1000px;
+    background-image: linear-gradient(180deg,#000, #FFD029);
+    background-color: #FFD029;
+    border-radius: 50%; 
+    transition: all 0.3s ease; 
+}
+
+.solen:hover {
+    box-shadow: 0px 0px 40px 10px #FFD029;
+}
+
+.merkurius {
+    background-image: linear-gradient(90deg,#888888, #000);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.merkurius:hover {
+    transform: scale(5);
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.venus {
+    background-image: linear-gradient(90deg,#E7CDCD, #000);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.venus:hover {
+    transform: scale(4);
+    box-shadow: 0px 0px 5px 3px gray;
+}
+
+.jorden {
+    background-image: linear-gradient(90deg,#428ED4, #000);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.jorden:hover {
+    transform: scale(4);
+    box-shadow: 0px 0px 5px 3px gray;
+}
+
+.mars {
+    background-image: linear-gradient(90deg,#EF5F5F, #000);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mars:hover {
+    transform: scale(5); 
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.jupiter {
+    background-image: linear-gradient(90deg,#E29468, #000);
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.jupiter:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 20px 10px gray;
+}
+
+.saturnus {
+    position: relative;
+    background-image: linear-gradient(90deg,#C7AA72, #000);
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.saturnus::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    right: -35px;
+    width: 218px;
+    height: 5px;
+    background: transparent;
+    opacity: .5;
+    background-image: linear-gradient(90deg,#000, #ffffff);
+    border-radius: 50%;
+    transform: rotate(160deg);
+}
+
+.saturnus:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 15px 7px gray;
+}
+
+.uranus {
+    background-image: linear-gradient(90deg,#C9D4F1, #000);
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.uranus:hover {
+    transform: scale(2);
+    box-shadow: 0px 0px 15px 7px gray;
+}
+
+.neptunus {
+    background-image: linear-gradient(90deg,#7A91A7, #000);
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.neptunus:hover {
+    transform: scale(2);
+    box-shadow: 0px 0px 15px 7px gray;
+}

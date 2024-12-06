@@ -1,0 +1,171 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg,#001645, #000);
+    z-index: 100;
+}
+
+#modal-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+}
+
+#modal-close {
+    position: absolute;
+    left: 1200px;
+    font-weight: 600;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.modal-content {
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 100px;
+    max-width: 600px;
+    padding: 20px;
+    user-select: none;
+}
+
+#planet-latin {
+    color: #FFD029;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#planet-desc {
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.modal-content h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 10px;
+    user-select: none;
+}
+
+.modal-content p {
+    color: white;
+}
+
+.modal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;   
+}
+
+.modal-info section p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.first-modal-column p:nth-child(1), 
+.first-modal-column p:nth-child(3) {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.second-modal-column p:nth-child(1), 
+.second-modal-column p:nth-child(3) {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.moons {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.modal-separator {
+    border-top: 1px solid #888;
+    margin: 20px 0;
+}
+
+
+#planet-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s;
+}
+
+#modal-planet {
+    position: absolute;
+    top: 90px;
+    left: -375px;
+    width: 500px;
+    height: 800px;
+    background-image: linear-gradient(200deg,gray, #000);
+    border-radius: 50%; 
+}
+
+#modal-planet::before,
+#modal-planet::after {
+    content: '';
+    position: absolute;
+    background-color: gray;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#modal-planet::before {
+    top: -20px;
+    left: 20px;
+    width: 550px;
+    height: 850px;
+    opacity: 0.1;
+}
+
+#modal-planet::after {
+    top: -45px;
+    width: 650px;
+    height: 900px;
+    opacity: 0.05;
+}
+
+#planet-modal.fade-out {
+    animation: fadeOut 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
