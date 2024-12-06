@@ -27,7 +27,7 @@ export const getAllPlanets = async (apiType, endpoint, key) => {
         headers: {
             "x-zocom": key
         }
-    }
+    }  
     //console.log(key)// visar att det är en ny nyckel som genereras vid siduppdatering
     try {
         const response = await fetch(url, options)
@@ -41,6 +41,5 @@ export const getAllPlanets = async (apiType, endpoint, key) => {
         throw error
     }
 }
-
 
 

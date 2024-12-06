@@ -6,6 +6,7 @@ import { generateStars } from "/src/stars.js"
 let planetData = []
 
 const planetModalColors = {
+    solen: "#FFD029",
     merkurius: "#888888",
     venus:"#E7CDCD",
     jorden:"#428ED4",
@@ -20,7 +21,7 @@ const loadPlanetData = async () => {
     try {
         const apiKey = await getApiKey("POST", "/keys")
         const response = await getAllPlanets("GET", "/bodies", apiKey)
-        const planets = response.bodies.filter(body => body.type === "planet")
+        const planets = response.bodies.filter(body => body.type = "planet", "star")
 
         planets.forEach(planet => {
             const planetKey = planet.name.toLowerCase()
@@ -34,6 +35,7 @@ const loadPlanetData = async () => {
                 mintemp: `${planet.temp.night} °C`,
                 moons: planet.moons.length > 0 ? planet.moons.join(", ") : "Inga"
             }
+            console.log(planetData)
         })
 
     } catch (error) {
